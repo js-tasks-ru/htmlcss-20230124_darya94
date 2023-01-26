@@ -1,0 +1,27 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    background-color: blanchedalmond;
+    padding: 16px 0 0 16px;
+}
+nav {
+    padding: 4px 0 4px 16px;
+    background-color: cadetblue;
+}
+main {
+    padding: 4px 0 4px 16px;
+    background-color: burlywood;
+}
+article {
+    padding: 4px 0 4px 16px;
+    margin: 8px 0 8px 0;
+    background-color: aliceblue;
+}
+footer {
+    padding: 16px 0 16px 16px;
+    background-color: darkcyan;
+}
+a {
+    color: aliceblue;
+}
