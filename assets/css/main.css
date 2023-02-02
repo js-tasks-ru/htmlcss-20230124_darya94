@@ -1,4 +1,5 @@
 @import '../fonts/fonts.css';
+@import '/assets/css/normalize.css';
 
 :root {
     --white: #ffffff;
@@ -11,6 +12,8 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --deep-blue: #2342C0;
+    --deep-purple: #5028C6;
 
     --error: var(--red);
     --success: var(--blue);
