@@ -1,7 +1,6 @@
 /* Стилизация аккордеона */
-.accordion {
-    max-width: 730px;
-    padding: 24px 0px 24px 32px;
+.accordion_item {
+    padding: 24px 530px 24px 32px;
     margin-bottom: 8px;
     background: var(--white);
     border: 1px solid var(--grey-3);
@@ -13,21 +12,16 @@
     line-height: 24px;
 }
 
-.accordion:last-child {
+.accordion_item:last-child {
     margin-bottom: 0;
 }
 
 .accordion__summary {
     color: var(--black);
-}
-
-.accordion__summary::-webkit-details-marker {
-    display: none;
+    list-style: none;
 }
 
 .accordion__descriptor {
-    max-width: 650px;
-    margin: 0px;
-    padding-top: 16px;
+    margin: 16px 0 0 0;
     color: var(--grey-4);
 }
