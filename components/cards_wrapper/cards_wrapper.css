@@ -1,9 +1,0 @@
-.cards_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    padding-top: 67px;
-    padding-bottom: 204px;
-    height: 764px;
-}
