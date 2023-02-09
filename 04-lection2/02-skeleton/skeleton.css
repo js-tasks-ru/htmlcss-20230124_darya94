@@ -1,0 +1,46 @@
+.skeleton {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 24px 40px 32px 24px;
+}
+
+.skeleton__header {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.skeleton__avatar {
+    width: 64px;
+    height: 64px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.skeleton__title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.skeleton__line {
+    height: 20px;
+    background-color: var(--grey-2);
+}
+
+.skeleton__line_L {
+    width: 50%;
+}
+
+.skeleton__line_M {
+    width: 30%;
+}
+
+.skeleton__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    }
