@@ -1,6 +1,14 @@
 .content {
-    height: 1036px;
     background: #F9FAFC;
     border-top: 1px solid #DDE2E5;
     border-bottom: 1px solid #DDE2E5;
 }
+
+.content__inner{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 67px;
+    padding-bottom: 204px;
+    gap: 30px;
+}
+
