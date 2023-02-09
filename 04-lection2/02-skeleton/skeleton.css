@@ -21,7 +21,8 @@
 .skeleton__title {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 8px;
+    justify-content: center;
     flex-grow: 1;
 }
 
@@ -41,6 +42,5 @@
 .skeleton__body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 48px;
-}
+    gap: 8px;
+    }
