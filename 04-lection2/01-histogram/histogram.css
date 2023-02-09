@@ -30,7 +30,6 @@
 
 .histogram__link {
     margin: 0px;
-    text-align: right;
     color: var(--blue);
 }
 
@@ -42,16 +41,15 @@
 }
 
 .histogram__body {
-    margin-top: 40px;
+    margin-top: 39px;
     display: flex;
-    justify-content: space-between;
     align-items: end;
     height: 50px;
     flex-grow: 1;
 }
 
 .histogram__bar {
-    width: 100%;
+    flex-grow: 1;
     background-color: var(--blue);
     margin-left: 1px;
 }
