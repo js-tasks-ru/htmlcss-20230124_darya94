@@ -10,3 +10,8 @@
     line-height: 64px;
     color: black;
 }
+
+.header_inner {
+    padding: 0px;
+    height: 82px;
+}

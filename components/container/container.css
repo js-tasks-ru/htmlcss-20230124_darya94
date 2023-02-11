@@ -2,3 +2,9 @@
     max-width: 1110px;
     margin: 0 auto;
 }
+
+.container_inner-page {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+}

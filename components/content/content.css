@@ -4,11 +4,18 @@
     border-bottom: 1px solid #DDE2E5;
 }
 
-.content__inner{
+.content__inner {
     display: flex;
     flex-wrap: wrap;
     padding-top: 67px;
     padding-bottom: 204px;
     gap: 30px;
+}
+
+.content_inner-page {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-top: 0px;
+    border-bottom: 0px;
 }
 
