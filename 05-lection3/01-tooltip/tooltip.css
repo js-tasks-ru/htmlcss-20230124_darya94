@@ -5,7 +5,7 @@
 
 .tooltip__trigger {
     cursor:pointer;
-    z-index: 1;
+    z-index: 100;
 }
 
 .tooltip__bubble {
@@ -16,7 +16,7 @@
     display: none;
     position:absolute;
     left: 50%;
-    top: Calc(100% + 6px);
+    bottom: Calc(100% + 10px);
     transform: translateX(-50%);
     white-space: nowrap;
 }
@@ -24,12 +24,12 @@
 .tooltip__bubble::before {
     content: "";
     border: 10px solid transparent;
-    border-bottom-color: var(--blue);
+    border-top-color: var(--blue);
     position: absolute;
-    bottom: 100%;
+    top: 100%;
     transform: translateX(-50%);
     left: 50%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .tooltip__text {
