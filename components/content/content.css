@@ -4,11 +4,28 @@
     border-bottom: 1px solid #DDE2E5;
 }
 
-.content__inner{
+/*.content__inner{
     display: flex;
     flex-wrap: wrap;
     padding-top: 67px;
     padding-bottom: 204px;
     gap: 30px;
+}
+*/
+
+.content__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px,1fr));
+    gap: 30px;
+    padding-top: 67px;
+    padding-bottom: 204px;
+}
+
+@media screen and (max-width: 480px) {
+    .content__inner {
+        gap: 23px;
+        padding-top: 22px;
+        padding-bottom: 61px;
+    }
 }
 
