@@ -1,8 +1,5 @@
 .modal {
     position: relative;
-}
-
-.modal__wrapper {
     display: none;
     position: fixed;
     top:0;
@@ -11,6 +8,7 @@
     z-index: 1;
     background: rgba(196, 196, 196, 0.5);
 }
+
 
 .modal__window {
     position: absolute;
