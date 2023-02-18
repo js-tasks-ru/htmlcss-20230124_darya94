@@ -26,4 +26,11 @@
         font-size: 28px;
         line-height: 38px;
     }
+
+    .header_inner {
+        background-color: #F9FAFC;
+        height: 64px;
+        padding: 0px;
+    }
 }
+

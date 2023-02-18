@@ -22,3 +22,24 @@
     margin-right: 400px;
 }
 
+@media screen and (max-width: 480px) {
+    .component-description {
+        grid-template-rows: 26px 1fr;
+        gap: 20px;
+        padding: 32px 0 32px 0;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .component-description__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .component-description_histogram {
+        margin-right: 0;
+    }
+
+}
+
+

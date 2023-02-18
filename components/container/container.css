@@ -6,5 +6,7 @@
 @media screen and (max-width: 480px) {
     .container {
         max-width: 344px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
