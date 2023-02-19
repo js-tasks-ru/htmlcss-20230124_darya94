@@ -26,9 +26,21 @@
 .accordion__summary {
     color: var(--black);
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .accordion__descriptor {
     margin: 16px 0 0 0;
     color: var(--grey-4);
+}
+
+.accordion__icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.accordion__item[open] .accordion__icon {
+    transform: scale(1,-1);
 }

@@ -29,6 +29,8 @@
     top: 12px;
     right: 12px;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
 }
 
 .modal__title {
