@@ -5,8 +5,8 @@
 
 @media screen and (max-width: 480px) {
     .container {
-        max-width: 344px;
-        margin-left: 16px;
-        margin-right: 16px;
+        box-sizing: border-box;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }

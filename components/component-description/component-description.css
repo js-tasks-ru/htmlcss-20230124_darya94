@@ -6,6 +6,7 @@
     background-color: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    padding-right: 400px;
 }
 
 .component-description__title {
@@ -18,9 +19,6 @@
     margin: 0px;
 }
 
-.component-description_histogram {
-    margin-right: 400px;
-}
 
 @media screen and (max-width: 480px) {
     .component-description {
@@ -36,9 +34,6 @@
         line-height: 26px;
     }
 
-    .component-description_histogram {
-        margin-right: 0;
-    }
 
 }
 
