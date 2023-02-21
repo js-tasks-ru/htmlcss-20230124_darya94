@@ -6,33 +6,28 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
+        <label class="formgroup__input">
+            <h5 class="formgroup__label">Label</h5>
+            <input type="text" class="formgroup__field" placeholder="Placeholder" value="">
+        </label>
 
-        <div class="formgroup">
-            <label class="formgroup__input">
-                <h5 class="formgroup__label">Label</h5>
-                <input type="text" class="formgroup__field" placeholder="Placeholder" value="">
-            </label>
-        </div>
-
-        <div class="formgroup">
-            <label class="formgroup__input">
-                <h5 class="formgroup__label">Success</h5>
-                <input type="text" class="formgroup__field" value="Success">
-            </label>
+        <label class="formgroup__input">
+            <h5 class="formgroup__label">Success</h5>
+            <input type="text" class="formgroup__field" value="Success">
             <svg class="formgroup__icon formgroup__icon_success">
                 <use href="/assets/images/icons-sprite.svg#success"></use>
             </svg>
-        </div>
-
-        <div class="formgroup">
-            <label class="formgroup__input">
-                <h5 class="formgroup__label">Error</h5>
-                <input type="text" class="formgroup__field formgroup__field_error" value="Error">
-            </label>
+        </label>
+        
+        <label class="formgroup__input">
+            <h5 class="formgroup__label">Error</h5>
+            <input type="text" class="formgroup__field formgroup__field_error" value="Error">
             <svg class="formgroup__icon formgroup__icon_error">
                 <use href="/assets/images/icons-sprite.svg#error"></use>
             </svg>
-        </div>
+        </label>
+         
+     
 
     </body>
 </html>
