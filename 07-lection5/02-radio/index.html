@@ -4,8 +4,43 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <link rel="stylesheet" href="/07-lection5/02-radio/wrapper-radiobutton.css">
     </head>
-    <body>
+    <body class="wrapper-radiobutton">
+        <label class="radiobutton">
+            <input type="radio" class="radiobutton__input" name="study-radio">
+            <div class="radiobutton__state">
+                <div class="radiobutton__control">
+                    <div class="radiobutton__indicator-on"></div>
+                </div>
+                <div class="radiobutton__description">
+                    Default
+                </div>
+            </div>
+        </label>
 
+        <label class="radiobutton">
+            <input type="radio" class="radiobutton__input" name="study-radio">
+            <div class="radiobutton__state">
+                <div class="radiobutton__control">
+                    <div class="radiobutton__indicator-on"></div>
+                </div>
+                <div class="radiobutton__description">
+                    Default
+                </div>
+            </div>
+        </label>
+
+        <label class="radiobutton">
+            <input disabled type="radio" class="radiobutton__input" name="study-radio">
+            <div class="radiobutton__state">
+                <div class="radiobutton__control">
+                    <div class="radiobutton__indicator-on"></div>
+                </div>
+                <div class="radiobutton__description">
+                    Disabled
+                </div>
+            </div>
+        </label>
     </body>
 </html>
