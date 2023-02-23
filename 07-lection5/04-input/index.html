@@ -6,28 +6,44 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-        <label class="formgroup__input">
-            <h5 class="formgroup__label">Label</h5>
-            <input type="text" class="formgroup__field" placeholder="Placeholder" value="">
+        <label class="formgroup">
+            Label
+            <div class="formgroup__wrapper">
+                <input type="text" class="formgroup__input" placeholder="Placeholder" value="">
+                <svg class="formgroup__icon">
+                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                </svg>
+                <svg class="formgroup__icon">
+                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                </svg>
+            </div>
         </label>
 
-        <label class="formgroup__input">
-            <h5 class="formgroup__label">Success</h5>
-            <input type="text" class="formgroup__field" value="Success">
-            <svg class="formgroup__icon formgroup__icon_success">
-                <use href="/assets/images/icons-sprite.svg#success"></use>
-            </svg>
+        <label class="formgroup">
+            Label
+            <div class="formgroup__wrapper">
+                <input type="text" class="formgroup__input" placeholder="Placeholder" value="Success">
+                <svg class="formgroup__icon formgroup__icon_success">
+                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                </svg>
+                <svg class="formgroup__icon">
+                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                </svg>
+            </div>
         </label>
-        
-        <label class="formgroup__input">
-            <h5 class="formgroup__label">Error</h5>
-            <input type="text" class="formgroup__field formgroup__field_error" value="Error">
-            <svg class="formgroup__icon formgroup__icon_error">
-                <use href="/assets/images/icons-sprite.svg#error"></use>
-            </svg>
+
+        <label class="formgroup">
+            Label
+            <div class="formgroup__wrapper">
+                <input type="text" class="formgroup__input formgroup__input_error" placeholder="Placeholder" value="Error">
+                <svg class="formgroup__icon">
+                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                </svg>
+                <svg class="formgroup__icon formgroup__icon_error">
+                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                </svg>
+            </div>
         </label>
-         
-     
 
     </body>
 </html>
