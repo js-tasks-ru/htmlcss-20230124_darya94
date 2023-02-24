@@ -1,3 +1,13 @@
+.tabs {
+    position: relative;
+}
+
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0,0,0,0);
+}
+
 .tabs__scroller-wrapper {
     display: flex;
     gap: 40px;
@@ -12,4 +22,25 @@
     display: flex;
     align-items: center;
     color: var(--grey-3);
+    padding-bottom: 8px;
+    border-bottom: 5px solid transparent;
+}
+
+#all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
+#elements:checked ~ .tabs__scroller .tabs__label[for="elements"],
+#containers:checked ~ .tabs__scroller .tabs__label[for="containers"],
+#templates:checked ~ .tabs__scroller .tabs__label[for="templates"] {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__content_all, .tabs__content_elements, .tabs__content_containers, .tabs__content_templates {
+    display: none;
+}
+
+#all-tab:checked ~ .tabs__content_all,
+#elements:checked ~ .tabs__content_elements,
+#containers:checked ~ .tabs__content_containers,
+#templates:checked ~ .tabs__content_templates {
+    display: block;
 }

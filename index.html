@@ -28,15 +28,17 @@
 
             <div class="tabs">
                 <input class="tabs__input" type="radio" id="all-tab" name="tab" checked>
-                <input class="tabs__input" type="radio" id="atoms-tab" name="tab">
-                <input class="tabs__input" type="radio" id="simple-tab" name="tab">
+                <input class="tabs__input" type="radio" id="elements" name="tab">
+                <input class="tabs__input" type="radio" id="containers" name="tab">
+                <input class="tabs__input" type="radio" id="templates" name="tab">
             
                 <div class="tabs__scroller">
                     <div class="container">
                         <div class="tabs__scroller-wrapper">
                             <label class="tabs__label" for="all-tab">All components</label>
-                            <label class="tabs__label" for="complex-tab">Complex</label>
-                            <label class="tabs__label" for="simple-tab">Simple</label>
+                            <label class="tabs__label" for="elements">Elements</label>
+                            <label class="tabs__label" for="containers">Containers</label>
+                            <label class="tabs__label" for="templates">Templates</label>
                         </div>
                     </div>
                 </div>
@@ -98,8 +100,26 @@
                         </div>
                     </main>
                 </div>
-                <div class="tabs__content tabs__content_simple">
-                    <!-- Простые компоненты -->
+                <div class="tabs__content tabs__content_elements">
+                    <main class="content page__main">
+                        <div class="container">
+                            Here will be sorted components
+                        </div>
+                    </main>
+                </div>
+                <div class="tabs__content tabs__content_containers">
+                    <main class="content page__main">
+                        <div class="container">
+                            Here will be sorted components
+                        </div>
+                    </main>
+                </div>
+                <div class="tabs__content tabs__content_templates">
+                    <main class="content page__main">
+                        <div class="container">
+                            Here will be sorted components
+                        </div>
+                    </main>
                 </div>
             </div>
             <footer class="footer">
