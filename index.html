@@ -25,61 +25,83 @@
                     </div>
                 </div>
             </header>
-            <main class="content page__main">
-                <div class="container">
-                    <div class="content__inner">
-                        <div class="card">
-                            <div></div>
-                            <p class="card__title">Tooltip</p>
-                        </div>
-                        <div class="card">
-                            <div></div>
-                            <p class="card__title">Custom form elements</p>
-                        </div>
-                        <div class="card">
-                            <div></div>
-                            <p class="card__title">Calendar</p>
-                        </div>
-                        <div class="card">
-                            <div></div>
-                            <p class="card__title">Modal dialog</p>
-                        </div>
-                        <div class="card">
-                            <div class="card__content-wrapper">
-                                <div class="histogram histogram_preview">
-                                    <div class="histogram__header">
-                                        <div class="histogram__header-title">
-                                            <p class="histogram__title">Total order</p>
-                                            <a class="histogram__link">View</a>
-                                        </div>
-                                        <h4 class="histogram__value">50254</h4>
-                                    </div>
-                                    <div class="histogram__body">
-                                        <div class="histogram__bar histogram__bar_XL"></div>
-                                        <div class="histogram__bar histogram__bar_L"></div>
-                                        <div class="histogram__bar histogram__bar_XL"></div>
-                                        <div class="histogram__bar histogram__bar_S"></div>
-                                        <div class="histogram__bar histogram__bar_M"></div>
-                                        <div class="histogram__bar histogram__bar_S"></div>
-                                        <div class="histogram__bar histogram__bar_XS"></div>
-                                        <div class="histogram__bar histogram__bar_S"></div>
-                                        <div class="histogram__bar histogram__bar_M"></div>
-                                        <div class="histogram__bar histogram__bar_M"></div>
-                                        <div class="histogram__bar histogram__bar_L"></div>
-                                        <div class="histogram__bar histogram__bar_XL"></div>
-                                        <div class="histogram__bar histogram__bar_M"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="card__title">Histogram</p>
-                        </div>
-                        <div class="card">
-                            <div></div>
-                            <p class="card__title">Avatar</p>
+
+            <div class="tabs">
+                <input class="tabs__input" type="radio" id="all-tab" name="tab" checked>
+                <input class="tabs__input" type="radio" id="atoms-tab" name="tab">
+                <input class="tabs__input" type="radio" id="simple-tab" name="tab">
+            
+                <div class="tabs__scroller">
+                    <div class="container">
+                        <div class="tabs__scroller-wrapper">
+                            <label class="tabs__label" for="all-tab">All components</label>
+                            <label class="tabs__label" for="complex-tab">Complex</label>
+                            <label class="tabs__label" for="simple-tab">Simple</label>
                         </div>
                     </div>
                 </div>
-            </main>
+            
+                <div class="tabs__content tabs__content_all">                  
+                    <main class="content page__main">
+                        <div class="container">
+                            <div class="content__inner">
+                                <div class="card">
+                                    <div></div>
+                                    <p class="card__title">Tooltip</p>
+                                </div>
+                                <div class="card">
+                                    <div></div>
+                                    <p class="card__title">Custom form elements</p>
+                                </div>
+                                <div class="card">
+                                    <div></div>
+                                    <p class="card__title">Calendar</p>
+                                </div>
+                                <div class="card">
+                                    <div></div>
+                                    <p class="card__title">Modal dialog</p>
+                                </div>
+                                <div class="card">
+                                    <div class="card__content-wrapper">
+                                        <div class="histogram histogram_preview">
+                                            <div class="histogram__header">
+                                                <div class="histogram__header-title">
+                                                    <p class="histogram__title">Total order</p>
+                                                    <a class="histogram__link">View</a>
+                                                </div>
+                                                <h4 class="histogram__value">50254</h4>
+                                            </div>
+                                            <div class="histogram__body">
+                                                <div class="histogram__bar histogram__bar_XL"></div>
+                                                <div class="histogram__bar histogram__bar_L"></div>
+                                                <div class="histogram__bar histogram__bar_XL"></div>
+                                                <div class="histogram__bar histogram__bar_S"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                                <div class="histogram__bar histogram__bar_S"></div>
+                                                <div class="histogram__bar histogram__bar_XS"></div>
+                                                <div class="histogram__bar histogram__bar_S"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                                <div class="histogram__bar histogram__bar_L"></div>
+                                                <div class="histogram__bar histogram__bar_XL"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Histogram</p>
+                                </div>
+                                <div class="card">
+                                    <div></div>
+                                    <p class="card__title">Avatar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="tabs__content tabs__content_simple">
+                    <!-- Простые компоненты -->
+                </div>
+            </div>
             <footer class="footer">
                 <div class="container">
                     <h2 class="footer__subtitle">About</h2>
