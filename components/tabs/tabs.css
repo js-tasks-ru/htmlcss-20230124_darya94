@@ -11,6 +11,7 @@
 .tabs__scroller-wrapper {
     display: flex;
     gap: 40px;
+    overflow-x: auto;
 }
 
 .tabs__label {
