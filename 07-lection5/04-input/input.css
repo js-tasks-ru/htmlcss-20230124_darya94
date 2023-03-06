@@ -2,6 +2,9 @@
     display: inline-flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.formgroup__label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -10,7 +13,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
-    margin: 0;
 }
 
 .formgroup__wrapper {
