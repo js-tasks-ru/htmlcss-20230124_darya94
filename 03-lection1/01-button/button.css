@@ -56,3 +56,8 @@
     transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
 }
 
+.button_icon {
+    padding: 4px;
+    border: none;
+    line-height: 0;
+}
