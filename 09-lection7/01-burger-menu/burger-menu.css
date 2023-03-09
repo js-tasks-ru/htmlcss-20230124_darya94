@@ -13,7 +13,7 @@
         transform: translateX(-100vw);
         transition: transform 300ms linear;
         background-color: var(--white);
-        
+        padding-left: 16px;
     }
     
     .burger-menu[data-open] {
