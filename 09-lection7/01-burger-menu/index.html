@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./burger-menu.css">
         <link rel="stylesheet" href="/03-lection1/01-button/button.css">
         <link rel="stylesheet" href="/07-lection5/03-toggler/toggler.css">
+
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
@@ -25,6 +26,13 @@
                         </svg>                    
                 </button>
                 <div class="burger-menu__header">
+            <button class="burger-menu__close button_icon" id="burger-menu-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </button>
+            <div class="burger-menu__header">
                     <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_18829_459)">
                         <rect y="1" width="30" height="30" fill="#212429"/>
@@ -61,6 +69,18 @@
                         <a class="burger-menu__link" href="">Main page</a>
                     </div>
                 </div>
+            </div>
+            <div class="burger-menu__body">
+                <nav class="burger-menu__link-list">
+                    <h4 class="burger-menu__title">Components</h4>
+                    <a class="burger-menu__link" href="">Modal</a>
+                    <a class="burger-menu__link" href="">Tooltip</a>
+                    <a class="burger-menu__link" href="">Avatar</a>
+                    <a class="burger-menu__link" href="">Calendar</a>
+                    <a class="burger-menu__link burger-menu__link_active" href="">Histogram</a>
+                    <a class="burger-menu__link" href="">Custom form elements</a>
+                    <a class="burger-menu__link" href="">Main page</a>
+                </nav>
             </div>
         </div>
     </body>
