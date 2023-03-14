@@ -9,6 +9,12 @@
     gap: 40px;
 }
 
+.header__logo-theme-changer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
 .header__title {
     font-family: 'Inter', sans-serif;
     font-style: normal;

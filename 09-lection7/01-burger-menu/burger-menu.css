@@ -35,6 +35,29 @@
         text-align: center;
     }
     
+    .burger-menu-body {
+        padding-top: 16px;
+    }
+    
+    .burger-menu__dark-mode-switcher {
+        border-top: solid var(--grey-2) 1px;
+        border-bottom: solid var(--grey-2) 1px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    .burger-menu__dark-mode-text {
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--grey-4);
+    }
+    
     .burger-menu__body {
         padding-top: 16px;
     }
