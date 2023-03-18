@@ -35,10 +35,6 @@
         text-align: center;
     }
     
-    .burger-menu_body {
-        padding-top: 16px;
-    }
-    
     .burger-menu__dark-mode-switcher {
         border-top: solid var(--grey-2) 1px;
         border-bottom: solid var(--grey-2) 1px;
