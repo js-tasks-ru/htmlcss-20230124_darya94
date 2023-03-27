@@ -61,3 +61,21 @@
 .calendar__item_active-period {
     background-color: rgba(160, 177, 245, 0.2);
 }
+
+.calendar_preview {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 14px;
+}
+
+.calendar__title_preview {
+    font-size: 16px;
+}
+
+.calendar__item_preview {
+    font-size: 12px;
+}
+
+.calendar__item_day_preview {
+    font-size: 10px;
+}

@@ -70,3 +70,7 @@
 .radiobutton__input:disabled ~ .radiobutton__state {
     pointer-events: none;
 }
+
+.radiobutton_preview {
+    pointer-events: none;
+}

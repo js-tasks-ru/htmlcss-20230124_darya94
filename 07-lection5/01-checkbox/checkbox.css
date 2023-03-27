@@ -73,3 +73,7 @@
 .checkbox__input:disabled ~ .checkbox__state {
     pointer-events: none;
 }
+
+.checkbox_preview {
+    pointer-events: none;
+}

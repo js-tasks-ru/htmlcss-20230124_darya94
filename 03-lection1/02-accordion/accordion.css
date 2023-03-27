@@ -44,3 +44,10 @@
 .accordion__item[open] .accordion__icon {
     transform: scale(1,-1);
 }
+
+
+.accordion__item_preview {
+    padding: 16px 24px 16px 24px;
+    width: 250px;
+    pointer-events: none;
+}

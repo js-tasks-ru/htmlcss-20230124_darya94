@@ -62,3 +62,13 @@
     line-height: 0;
     cursor: pointer;
 }
+
+.button_preview-modal {
+    padding: 8px 16px 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.button_preview {
+    pointer-events: none;
+}
