@@ -12,6 +12,7 @@
     display: flex;
     gap: 40px;
     overflow-x: auto;
+    border-bottom: 1px solid var(--grey-2);
 }
 
 .tabs__label {
@@ -44,4 +45,29 @@
 #containers:checked ~ .tabs__content_containers,
 #templates:checked ~ .tabs__content_templates {
     display: block;
+}
+
+
+
+/*Табы для страниц компонентов*/
+
+
+#html:checked ~ .tabs__scroller .tabs__label[for="html"],
+#css:checked ~ .tabs__scroller .tabs__label[for="css"] {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__content_html, .tabs__content_css {
+    display: none;
+}
+
+#html:checked ~ .tabs__content_html,
+#css:checked ~ .tabs__content_css {
+    display: block;
+}
+
+
+.tabs__content-code {
+    padding-top: 50px;
 }

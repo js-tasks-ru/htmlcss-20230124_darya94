@@ -6,6 +6,7 @@
     display: grid;
     grid-template-rows: 1fr 55px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .card__title {

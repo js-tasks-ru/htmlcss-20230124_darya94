@@ -27,10 +27,6 @@
     text-decoration: none;   
 }
 
-.side-menu__link:last-child {
-    margin-top: 26px;
-}
-
 .side-menu__link_active {
     color: var(--notification);
 }
@@ -39,4 +35,10 @@
     .side-menu {
         display: none;
     }
+}
+
+.side-menu_page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
