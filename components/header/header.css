@@ -1,6 +1,6 @@
 .header {
     padding: 25px 0px 40px 0px;
-    background-color: white;
+    background-color: var(--main-bg);
 }
 
 .header__wrapper {
@@ -36,12 +36,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--grey-3);
+    color: var(--font-color);
     text-decoration: none;
 }
 
 .header__link:hover {
-    color: var(--black);
+    color: var(--text-primary);
 }
 
 .header__title {
@@ -50,7 +50,7 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: black;
+    color: var(--text-primary);
     margin: 0;
 }
 
@@ -70,7 +70,7 @@
     }
 
     .header_inner {
-        background-color: #F9FAFC;
+        background-color: var(--grey-bg);
         height: 64px;
         padding: 0px;
     }

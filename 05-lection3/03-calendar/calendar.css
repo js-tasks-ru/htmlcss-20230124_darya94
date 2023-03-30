@@ -1,5 +1,5 @@
 .calendar {
-    background: var(--white);
+    background: var(--main-bg);
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 28px;
@@ -14,7 +14,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #334D6E;
+    color: var(--font-color);
     text-align: center;
 }
 
@@ -60,6 +60,7 @@
 
 .calendar__item_active-period {
     background-color: rgba(160, 177, 245, 0.2);
+    color: var(--active-text-color);
 }
 
 .calendar_preview {

@@ -1,5 +1,5 @@
 .content {
-    background: #F9FAFC;
+    background: var(--grey-bg);
     border-top: 1px solid #DDE2E5;
     border-bottom: 1px solid #DDE2E5;
 }
@@ -43,7 +43,7 @@
     }
 
     .content_inner-page {
-        background-color: var(--white);
+        background-color: var(--main-bg);
         padding: 0;
     }
 

@@ -20,7 +20,7 @@
 }
 
 .formgroup__input {
-    background: var(--white);
+    background: var(--main-bg);
     border: 1px solid var(--grey-2);
     border-radius: 8px;
     width: 350px;
@@ -31,7 +31,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: var(--grey-4);
+    color: var(--input-text-color);
 }
 
 .formgroup__icon {
@@ -70,7 +70,7 @@
 }
 
 .formgroup__input_preview {
-    width: 170px;
+    width: 160px;
     height: 40px;
     font-size: 14px;
     line-height: 16px;

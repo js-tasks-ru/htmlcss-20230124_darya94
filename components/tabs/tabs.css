@@ -1,5 +1,6 @@
 .tabs {
     position: relative;
+    background-color: var(--main-bg);
 }
 
 .tabs__input {
@@ -23,17 +24,18 @@
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: var(--grey-3);
+    color: var(--text-secondary);
     padding-bottom: 8px;
     border-bottom: 5px solid transparent;
+    cursor: pointer;
 }
 
 #all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
 #elements:checked ~ .tabs__scroller .tabs__label[for="elements"],
 #containers:checked ~ .tabs__scroller .tabs__label[for="containers"],
 #templates:checked ~ .tabs__scroller .tabs__label[for="templates"] {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
+    color: var(--text-primary);
+    border-bottom: 5px solid var(--text-primary);
 }
 
 .tabs__content_all, .tabs__content_elements, .tabs__content_containers, .tabs__content_templates {
@@ -54,8 +56,8 @@
 
 #html:checked ~ .tabs__scroller .tabs__label[for="html"],
 #css:checked ~ .tabs__scroller .tabs__label[for="css"] {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
+    color: var(--text-primary);
+    border-bottom: 5px solid var(--text-primary);
 }
 
 .tabs__content_html, .tabs__content_css {
