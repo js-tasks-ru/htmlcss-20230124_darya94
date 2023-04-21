@@ -22,6 +22,11 @@
     color: var(--font-color);
 }
 
+.component-description__component-view_custom-form-elem {
+    display: flex;
+    gap: 88px;
+}
+
 
 @media screen and (max-width: 480px) {
     .component-description {

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/components/side-menu/side-menu.css">
+        <link rel="stylesheet" href="/components/component-description/component-description.css">
+        <link rel="stylesheet" href="/07-lection5/02-radio/wrapper-radiobutton.css">
+        <link rel="stylesheet" href="/07-lection5/01-checkbox/wrapper-checkbox.css">
+        <link rel="stylesheet" href="/07-lection5/03-toggler/wrapper-toggler.css">
+        <script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
+    </head>
+    <body>
+        <div class="page page_inner"> 
+            <header class="header header_inner">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo-theme-changer">
+                            <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_83176_23)">
+                                <rect y="1" width="30" height="30" fill="currentColor"/>
+                                <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+                                <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_83176_23">
+                                <rect width="110" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>    
+                            <label class="toggler" id="theme-changer">
+                                <input type="checkbox" class="toggler__input">
+                                <div class="toggler__state">
+                                    <svg class="toggler__icon toggler__icon_light-theme">
+                                        <use href="/assets/images/icons-sprite.svg#sun"></use>
+                                    </svg>
+                                    <div class="toggler__control">
+                                        <div class="toggler__indicator"></div>
+                                    </div>
+                                    <svg class="toggler__icon toggler__icon_black-theme">
+                                        <use href="/assets/images/icons-sprite.svg#moon"></use>
+                                    </svg>
+                                </div>
+                            </label> 
+                        </div>                    
+                    </div>
+                </div>
+            </header>
+            <main class="content content_inner-page">
+                <div class="container">
+                    <div class="content__wrapper-inner-page">
+                        <div class="side-menu side-menu_page">
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Elements</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/pages/page-input.html">Input</a>
+                                    <a class="side-menu__link" href="/pages/page-tooltip.html">Tooltip</a>
+                                    <a class="side-menu__link side-menu__link_active" href="/pages/page-custom-form-elem.html">Custom form elements</a>
+                                    <a class="side-menu__link" href="/pages/page-avatar.html">Avatar</a>
+                                    <a class="side-menu__link" href="/pages/page-button.html">Button</a>
+                                    <a class="side-menu__link" href="/pages/page-toggler.html">Toggler</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Containers</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/pages/page-calendar.html">Calendar</a>
+                                    <a class="side-menu__link" href="/pages/page-skeleton.html">Skeleton</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Templates</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/pages/page-modal.html">Modal</a>
+                                    <a class="side-menu__link" href="/pages/page-histogram.html">Histogram</a>
+                                    <a class="side-menu__link" href="/pages/page-accordion.html">Accordion</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/index.html">Main page</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-description">
+                            <h3 class="component-description__title">Custom form elements</h3>
+                            <div class="component-description__component-view">
+                                <div class="component-description__component-view_custom-form-elem">
+                                    <div class="wrapper-radiobutton">
+                                        <label class="radiobutton">
+                                            <input type="radio" class="radiobutton__input" name="study-radio">
+                                            <div class="radiobutton__state">
+                                                <div class="radiobutton__control">
+                                                    <div class="radiobutton__indicator-on"></div>
+                                                </div>
+                                                <div class="radiobutton__description">
+                                                    Default
+                                                </div>
+                                            </div>
+                                        </label>
+                                
+                                        <label class="radiobutton">
+                                            <input type="radio" class="radiobutton__input" name="study-radio" checked>
+                                            <div class="radiobutton__state">
+                                                <div class="radiobutton__control">
+                                                    <div class="radiobutton__indicator-on"></div>
+                                                </div>
+                                                <div class="radiobutton__description">
+                                                    Checked
+                                                </div>
+                                            </div>
+                                        </label>
+                                
+                                        <label class="radiobutton">
+                                            <input disabled type="radio" class="radiobutton__input" name="study-radio">
+                                            <div class="radiobutton__state">
+                                                <div class="radiobutton__control">
+                                                    <div class="radiobutton__indicator-on"></div>
+                                                </div>
+                                                <div class="radiobutton__description">
+                                                    Disabled
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="wrapper-checkbox">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon">
+                                                        <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__description">
+                                                    Default
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" checked>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon">
+                                                        <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__description">
+                                                    Checked
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" disabled>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon">
+                                                        <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__description">
+                                                    Disabled
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="wrapper-toggler">
+                                        <label class="toggler">
+                                            <input type="checkbox" class="toggler__input">
+                                            <div class="toggler__state">
+                                                <div class="toggler__control">
+                                                    <div class="toggler__indicator"></div>
+                                                </div>
+                                                <div class="toggler__description">
+                                                    Toggler
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        <label class="toggler">
+                                            <input checked type="checkbox" class="toggler__input">
+                                            <div class="toggler__state">
+                                                <div class="toggler__control">
+                                                    <div class="toggler__indicator"></div>
+                                                </div>
+                                                <div class="toggler__description">
+                                                    Checked
+                                                </div>
+                                            </div>
+                                        </label>
+                                
+                                        <label class="toggler">
+                                            <input disabled type="checkbox" class="toggler__input">
+                                            <div class="toggler__state">
+                                                <div class="toggler__control">
+                                                    <div class="toggler__indicator"></div>
+                                                </div>
+                                                <div class="toggler__description">
+                                                    Disabled
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component-description__code">
+                                <div class="tabs">
+                                    <input class="tabs__input" type="radio" id="html" name="tab" checked>
+                                    <input class="tabs__input" type="radio" id="css" name="tab">
+
+                                    <div class="tabs__scroller">
+                                        <div class="container">
+                                            <div class="tabs__scroller-wrapper">
+                                                <label class="tabs__label" for="html">HTML</label>
+                                                <label class="tabs__label" for="css">CSS</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="tabs__content tabs__content_html">                  
+                                        <div class="tabs__content-code">
+                                            <code>
+                                                &ltlabel class="radiobutton"&gt <br>
+                                                &nbsp&nbsp&nbsp&nbsp&ltinput type="radio" class="radiobutton__input" name="study-radio"&gt<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="radiobutton__state"&gt<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="radiobutton__control"&gt<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="radiobutton__indicator-on"&gt&lt/div&gt<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/div&gt<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="radiobutton__description"&gt<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Default<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                &lt/label&gt<br>
+                                                <br>
+                                                <br>
+                                                &ltlabel class="checkbox"&gt<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput type="checkbox" class="checkbox__input"&gt<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="checkbox__state"&<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="checkbox__control"&<br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltsvg class="checkbox__icon"&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltuse href="/assets/images/icons-sprite.svg#check"&gt&lt/use&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/svg&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="checkbox__description"&gt<br>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Default<br>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                                    &lt/label&gt<br>
+                                                <br>
+                                                <br>
+                                                &ltlabel class="toggler"&gt<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltinput type="checkbox" class="toggler__input"&gt<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="toggler__state"&gt<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="toggler__control"&gt<br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="toggler__indicator"&gt&lt/div&gt<br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="toggler__description"&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toggler<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                &lt/label&gt<br>
+                                            </code>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content tabs__content_css">
+                                        <div class="tabs__content-code">
+                                            <code>
+                                                .radiobutton {<br>
+                                                    display: inline-block;<br>
+                                                    position: relative;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__input {<br>
+                                                    position: absolute;<br>
+                                                    outline: none;<br>
+                                                    clip: rect(0,0,0,0);<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__state {<br>
+                                                    display: flex;<br>
+                                                    align-items: center;<br>
+                                                    gap: 12px;<br>
+                                                    cursor: pointer;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__control {<br>
+                                                    box-sizing: border-box;<br>
+                                                    background: var(--main-bg);<br>
+                                                    border: 1px solid var(--grey-2);<br>
+                                                    border-radius: 14px;<br>
+                                                    width: 28px;<br>
+                                                    height: 28px;<br>
+                                                    position: relative;<br>
+                                                    display: flex;<br>
+                                                    align-items: center;<br>
+                                                    justify-content: center;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__indicator-on {<br>
+                                                    background: var(--blue);<br>
+                                                    border-radius: 14px;<br>
+                                                    width: 18px;<br>
+                                                    height: 18px;<br>
+                                                    display: none;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__description {<br>
+                                                    font-family: 'Inter';<br>
+                                                    font-style: normal;<br>
+                                                    font-weight: 400;<br>
+                                                    font-size: 16px;<br>
+                                                    line-height: 24px;<br>
+                                                    color: var(--text-primary);<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__input:checked ~ .radiobutton__state .radiobutton__control {<br>
+                                                    border: 2px solid var(--blue);<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__input:checked ~ .radiobutton__state .radiobutton__indicator-on {<br>
+                                                    display: block;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__input:focus ~ .radiobutton__state .radiobutton__description {<br>
+                                                    text-decoration: underline;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__input:disabled ~ .radiobutton__state .radiobutton__control {<br>
+                                                    background: var(--grey-2);<br>
+                                                    border: none;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__input:disabled ~ .radiobutton__state .radiobutton__description {<br>
+                                                    color: var(--grey-2);<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton__input:disabled ~ .radiobutton__state {<br>
+                                                    pointer-events: none;<br>
+                                                }<br>
+                                                <br>
+                                                .radiobutton_preview {<br>
+                                                    pointer-events: none;<br>
+                                                }<br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                .checkbox {<br>
+                                                    position: relative;<br>
+                                                    display: inline-block;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input {<br>
+                                                    position: absolute;<br>
+                                                    outline: none;<br>
+                                                    clip: rect(0,0,0,0);<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__state {<br>
+                                                    display: flex;<br>
+                                                    align-items: center;<br>
+                                                    gap: 12px;<br>
+                                                    cursor: pointer;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__control {<br>
+                                                    width: 28px;<br>
+                                                    height: 28px;<br>
+                                                    box-sizing: border-box;<br>
+                                                    background: var(--main-bg);<br>
+                                                    border: 1px solid var(--grey-2);<br>
+                                                    border-radius: 4px;<br>
+                                                    display: flex;<br>
+                                                    align-items: center;<br>
+                                                    justify-content: center;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__icon {<br>
+                                                    width: 24px;<br>
+                                                    height: 24px;<br>
+                                                    color: var(--main-bg);<br>
+                                                    display: none;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__description {<br>
+                                                    font-family: 'Inter';<br>
+                                                    font-style: normal;<br>
+                                                    font-weight: 400;<br>
+                                                    font-size: 16px;<br>
+                                                    line-height: 24px;<br>
+                                                    color: var(--text-primary);<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input:checked ~ .checkbox__state .checkbox__control {<br>
+                                                    background: var(--blue);<br>
+                                                    border: none;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input:checked ~ .checkbox__state .checkbox__icon {<br>
+                                                    display: block;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input:focus ~ .checkbox__state .checkbox__description {<br>
+                                                    text-decoration: underline;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input:disabled ~ .checkbox__state .checkbox__description {<br>
+                                                    color: var(--grey-2);<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input:disabled ~ .checkbox__state .checkbox__control {<br>
+                                                    background: var(--grey-2);<br>
+                                                    border: none;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input:disabled ~ .checkbox__state .checkbox__icon {<br>
+                                                    display: none;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox__input:disabled ~ .checkbox__state {<br>
+                                                    pointer-events: none;<br>
+                                                }<br>
+                                                <br>
+                                                .checkbox_preview {<br>
+                                                    pointer-events: none;<br>
+                                                }<br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                .toggler {<br>
+                                                    display: inline-block;<br>
+                                                    position: relative;<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input {<br>
+                                                    position: absolute;<br>
+                                                    outline: none;<br>
+                                                    clip: rect(0,0,0,0);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__state {<br>
+                                                    display: flex;<br>
+                                                    align-items: center;<br>
+                                                    gap: 12px;<br>
+                                                    cursor: pointer;<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__control {<br>
+                                                    box-sizing: border-box;<br>
+                                                    background: var(--main-bg);<br>
+                                                    border: 1px solid var(--grey-2);<br>
+                                                    border-radius: 16px;<br>
+                                                    width: 52px;<br>
+                                                    height: 28px;<br>
+                                                    display: flex;<br>
+                                                    align-items: center;<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__indicator {<br>
+                                                    background: var(--grey-2);<br>
+                                                    border-radius: 16px;<br>
+                                                    width: 24px;<br>
+                                                    height: 24px;<br>
+                                                    margin: 2px;<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__description {<br>
+                                                    font-family: 'Inter';<br>
+                                                    font-style: normal;<br>
+                                                    font-weight: 400;<br>
+                                                    font-size: 16px;<br>
+                                                    line-height: 24px;<br>
+                                                    color: var(--text-primary);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:checked ~ .toggler__state .toggler__control {<br>
+                                                    justify-content: end;<br>
+                                                    background: var(--blue);<br>
+                                                    border: 1px solid var(--blue);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:checked ~ .toggler__state .toggler__indicator {<br>
+                                                    background: var(--white);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:focus ~ .toggler__state .toggler__description {<br>
+                                                    text-decoration: underline;<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:disabled ~ .toggler__state .toggler__control {<br>
+                                                    background: var(--grey-2);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:disabled ~ .toggler__state .toggler__indicator {<br>
+                                                    background: var(--grey-3);<br>
+                                                    opacity: 0.25;<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:disabled ~ .toggler__state {<br>
+                                                    pointer-events: none;<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__icon {<br>
+                                                    width: 24px;<br>
+                                                    height: 24px;<br>
+                                                    color: var(--grey-3);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__icon_light-theme {<br>
+                                                    color: var(--grey-4);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:checked ~ .toggler__state .toggler__icon_black-theme {<br>
+                                                    color: var(--grey-4);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler__input:checked ~ .toggler__state .toggler__icon_light-theme {<br>
+                                                    color: var(--grey-3);<br>
+                                                }<br>
+                                                <br>
+                                                .toggler_preview {<br>
+                                                    pointer-events: none;<br>
+                                                }<br>
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                       
+                </div>
+            </main>
+            <footer class="footer footer_inner">
+                <div class="container">
+                   <h5 class="footer__inner-description">Reusable component library</h5>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

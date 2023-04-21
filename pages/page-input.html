@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/components/side-menu/side-menu.css">
+        <link rel="stylesheet" href="/components/component-description/component-description.css">
+        <script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
+    </head>
+    <body>
+        <div class="page page_inner"> 
+            <header class="header header_inner">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo-theme-changer">
+                            <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_83176_23)">
+                                <rect y="1" width="30" height="30" fill="currentColor"/>
+                                <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+                                <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_83176_23">
+                                <rect width="110" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>    
+                            <label class="toggler" id="theme-changer">
+                                <input type="checkbox" class="toggler__input">
+                                <div class="toggler__state">
+                                    <svg class="toggler__icon toggler__icon_light-theme">
+                                        <use href="/assets/images/icons-sprite.svg#sun"></use>
+                                    </svg>
+                                    <div class="toggler__control">
+                                        <div class="toggler__indicator"></div>
+                                    </div>
+                                    <svg class="toggler__icon toggler__icon_black-theme">
+                                        <use href="/assets/images/icons-sprite.svg#moon"></use>
+                                    </svg>
+                                </div>
+                            </label> 
+                        </div>                    
+                    </div>
+                </div>
+            </header>
+            <main class="content content_inner-page">
+                <div class="container">
+                    <div class="content__wrapper-inner-page">
+                        <div class="side-menu side-menu_page">
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Elements</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link side-menu__link_active" href="/pages/page-input.html">Input</a>
+                                    <a class="side-menu__link" href="/pages/page-tooltip.html">Tooltip</a>
+                                    <a class="side-menu__link" href="/pages/page-custom-form-elem.html">Custom form elements</a>
+                                    <a class="side-menu__link" href="/pages/page-avatar.html">Avatar</a>
+                                    <a class="side-menu__link" href="/pages/page-button.html">Button</a>
+                                    <a class="side-menu__link" href="/pages/page-toggler.html">Toggler</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Containers</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/pages/page-calendar.html">Calendar</a>
+                                    <a class="side-menu__link" href="/pages/page-skeleton.html">Skeleton</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Templates</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/pages/page-modal.html">Modal</a>
+                                    <a class="side-menu__link" href="/pages/page-histogram.html">Histogram</a>
+                                    <a class="side-menu__link" href="/pages/page-accordion.html">Accordion</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/index.html">Main page</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-description">
+                            <h3 class="component-description__title">Input</h3>
+                            <div class="component-description__component-view">
+                                    <div class="formgroup">
+                                        <label class="formgroup__label">Label</label>
+                                        <div class="formgroup__wrapper">
+                                            <input type="text" class="formgroup__input" placeholder="Placeholder" value="">
+                                            <svg class="formgroup__icon">
+                                                <use href="/assets/images/icons-sprite.svg#success"></use>
+                                            </svg>
+                                            <svg class="formgroup__icon">
+                                                <use href="/assets/images/icons-sprite.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="formgroup formgroup_success">
+                                        <label class="formgroup__label">Label</label>
+                                        <div class="formgroup__wrapper">
+                                            <input type="text" class="formgroup__input" placeholder="Placeholder" value="Success">
+                                            <svg class="formgroup__icon formgroup__icon_success">
+                                                <use href="/assets/images/icons-sprite.svg#success"></use>
+                                            </svg>
+                                            <svg class="formgroup__icon">
+                                                <use href="/assets/images/icons-sprite.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="formgroup formgroup_error">
+                                        <label class="formgroup__label">Label</label>
+                                        <div class="formgroup__wrapper">
+                                            <input type="text" class="formgroup__input formgroup__input_error" placeholder="Placeholder" value="Error">
+                                            <svg class="formgroup__icon">
+                                                <use href="/assets/images/icons-sprite.svg#success"></use>
+                                            </svg>
+                                            <svg class="formgroup__icon formgroup__icon_error">
+                                                <use href="/assets/images/icons-sprite.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="component-description__code">
+                                <div class="tabs">
+                                    <input class="tabs__input" type="radio" id="html" name="tab" checked>
+                                    <input class="tabs__input" type="radio" id="css" name="tab">
+
+                                    <div class="tabs__scroller">
+                                        <div class="container">
+                                            <div class="tabs__scroller-wrapper">
+                                                <label class="tabs__label" for="html">HTML</label>
+                                                <label class="tabs__label" for="css">CSS</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="tabs__content tabs__content_html">                  
+                                        <div class="tabs__content-code">
+                                            <code>
+                                                &ltdiv class="formgroup"&gt<br>
+                                                    &nbsp&nbsp&nbsp&nbsp&ltlabel class="formgroup__label"&gtLabel&lt/label&gt<br>
+                                                    &nbsp&nbsp&nbsp&nbsp&ltdiv class="formgroup__wrapper"&gt<br>
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput type="text" class="formgroup__input" placeholder="Placeholder" value=""&gt<br>
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsvg class="formgroup__icon"&gt<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltuse href="/assets/images/icons-sprite.svg#success"&gt&lt/use&gt<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/svg&gt<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsvg class="formgroup__icon"&gt<br>
+                                                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltuse href="/assets/images/icons-sprite.svg#error"&gt&lt/use&gt<br>
+                                                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/svg&gt<br>
+                                                                &nbsp&nbsp&nbsp&nbsp&lt/div&gt<br>
+                                                &lt/div&gt<br>
+                                            </code>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content tabs__content_css">
+                                        <div class="tabs__content-code">
+                                            <code>
+                                                .formgroup {<br>
+                                                    display: inline-flex;<br>
+                                                    flex-direction: column;<br>
+                                                    gap: 5px;<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup__label {<br>
+                                                    font-family: 'Inter';<br>
+                                                    font-style: normal;<br>
+                                                    font-weight: 500;<br>
+                                                    font-size: 12px;<br>
+                                                    line-height: 18px;<br>
+                                                    letter-spacing: 0.04em;<br>
+                                                    text-transform: uppercase;<br>
+                                                    color: var(--grey-3);<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup__wrapper {<br>
+                                                    position: relative;<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup__input {<br>
+                                                    background: var(--main-bg);<br>
+                                                    border: 1px solid var(--grey-2);<br>
+                                                    border-radius: 8px;<br>
+                                                    width: 350px;<br>
+                                                    height: 56px;<br>
+                                                    padding-left: 24px;<br>
+                                                    font-family: 'Inter';<br>
+                                                    font-style: normal;<br>
+                                                    font-weight: 400;<br>
+                                                    font-size: 20px;<br>
+                                                    line-height: 26px;<br>
+                                                    color: var(--input-text-color);<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup__icon {<br>
+                                                    width: 24px;<br>
+                                                    height: 24px;<br>
+                                                    position: absolute;<br>
+                                                    bottom: 16px;<br>
+                                                    right: 16px;<br>
+                                                    display: none;<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup_success .formgroup__icon_success {<br>
+                                                    display: inline-block;<br>
+                                                    color: var(--blue);<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup_error .formgroup__icon_error {<br>
+                                                    display: inline-block;<br>
+                                                    color: var(--red);<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup__input:focus, .formgroup__input:active {<br>
+                                                    outline: none;<br>
+                                                    border: 1px solid var(--blue);<br>
+                                                    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);<br>
+                                                }<br>
+                                                <br>
+                                                .formgroup__input_error, .formgroup__input_error:focus, .formgroup__input_error:active {<br>
+                                                    border: 1px solid var(--red);<br>
+                                                    box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);<br>
+                                                }<br>
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                       
+                </div>
+            </main>
+            <footer class="footer footer_inner">
+                <div class="container">
+                   <h5 class="footer__inner-description">Reusable component library</h5>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
