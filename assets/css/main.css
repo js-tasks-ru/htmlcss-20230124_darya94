@@ -7,11 +7,21 @@
 @import '../../components/container/container.css';
 @import '../../components/card/card.css';
 @import '../../components/cards_wrapper/cards_wrapper.css';
+@import '/03-lection1/01-button/button.css';
+@import '/03-lection1/02-accordion/accordion.css';
 @import '/04-lection2/01-histogram/histogram.css';
+@import '/04-lection2/02-skeleton/skeleton.css';
+@import '/05-lection3/01-tooltip/tooltip.css';
+@import '/05-lection3/03-calendar/calendar.css';
+@import '/05-lection3/02-modal/modal.css';
+@import '/06-lection4/01-avatar/avatar.css';
+@import '/07-lection5/01-checkbox/checkbox.css';
+@import '/07-lection5/02-radio/radio.css';
+@import '/07-lection5/04-input/input.css';
 @import '/components/tabs/tabs.css';
 @import '/07-lection5/03-toggler/toggler.css';
 
-:root {
+/*:root {
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
@@ -33,6 +43,53 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+}*/
+
+:root {
+    --white: #ffffff;
+    --black: #212429;
+    --pink: #F784AD;
+    --purple: #7048E8;
+    --blue: #4263EB;
+    --red: #F03D3E;
+    --grey-1: #F8F9FA;
+    --grey-2: #DDE2E5;
+    --grey-3: #ACB5BD;
+    --grey-4: #495057;
+    --deep-blue: #2342C0;
+    --deep-purple: #5028C6;
+    --peach: #D84910;
+
+    --error: var(--red);
+    --success: var(--blue);
+    --notification: var(--peach);
+    --primary: var(--blue);
+    --secondary: var(--purple);
+
+    --text-primary: var(--black);
+    --text-secondary: var(--grey-3);
+    --active-text-color: var(--text-primary);
+    --grey-bg: var(--grey-1);
+    --white-bg: var(--white);
+    --light-bg: var(--white);
+    --main-bg: var(--light-bg);
+    --dark-bg: var(--black);
+    --card-bg: var(--white);
+    --font-color: var(--text-primary);
+    --input-text-color: var(--grey-4);
+}
+
+html[data-theme-dark] {
+    --font-color: #ffffff75;
+    --main-bg: var(--black);
+    --dark-bg: var(--grey-1);
+    --white-bg: var(--black);
+    --light-bg: var(--grey-4);
+    --grey-bg: var(--grey-4);
+    --card-bg: var(--black);
+    --text-primary: var(--white);
+    --active-text-color: var(--grey-2);
+    --input-text-color: var(--font-color);
 }
 
 body {

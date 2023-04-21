@@ -1,6 +1,6 @@
 .footer {
     padding: 71px 0px 136px 0px;
-    background-color: white;
+    background-color: var(--main-bg);
     text-align: center;
 }
 
@@ -10,7 +10,7 @@
         font-weight: 500;
         font-size: 38px;
         line-height: 48px;
-        color: #212429;
+        color: var(--font-color);
 }
 
 .footer__descriptor {
@@ -19,7 +19,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #212429;
+        color: var(--font-color);
         max-width: 640px;
         margin: 0 auto;
 }
@@ -32,12 +32,12 @@
         line-height: 18px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: var(--grey-3);
+        color: var(--text-secondary);
 }
 
 
 .footer_inner {
-        background-color: #F9FAFC;
+        background-color: var(--grey-bg);
         padding: 56px 0 56px 0;
 }
 

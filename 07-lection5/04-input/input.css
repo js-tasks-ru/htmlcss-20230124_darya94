@@ -20,7 +20,7 @@
 }
 
 .formgroup__input {
-    background: var(--white);
+    background: var(--main-bg);
     border: 1px solid var(--grey-2);
     border-radius: 8px;
     width: 350px;
@@ -31,7 +31,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: var(--grey-4);
+    color: var(--input-text-color);
 }
 
 .formgroup__icon {
@@ -63,4 +63,27 @@
     border: 1px solid var(--red);
     box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
 }
+
+.formgroup__label_preview {
+    font-size: 8px;
+    line-height: 14px;
+}
+
+.formgroup__input_preview {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 14px;
+    pointer-events: none;
+}
+
+.formgroup__icon_preview {
+    bottom: 9px;
+    right: 12px;
+}
+
+
+
+
 

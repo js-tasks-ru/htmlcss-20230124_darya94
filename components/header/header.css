@@ -1,6 +1,6 @@
 .header {
     padding: 25px 0px 40px 0px;
-    background-color: white;
+    background-color: var(--main-bg);
 }
 
 .header__wrapper {
@@ -12,7 +12,40 @@
 .header__logo-theme-changer {
     display: flex;
     justify-content: space-between;
+    gap: 56px;
+   
+}
+
+.header__logo-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.header__logo {
+    color: var(--text-primary);
+}
+
+.header__links {
+    display: flex;
+    justify-content: space-between;
     align-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.header__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.header__link:hover {
+    color: var(--text-primary);
 }
 
 .header__title {
@@ -21,7 +54,7 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: black;
+    color: var(--text-primary);
     margin: 0;
 }
 
@@ -41,7 +74,7 @@
     }
 
     .header_inner {
-        background-color: #F9FAFC;
+        background-color: var(--grey-bg);
         height: 64px;
         padding: 0px;
     }

@@ -11,27 +11,37 @@
                 <div class="container">
                     <div class="header__wrapper">
                         <div class="header__logo-theme-changer">
-                            <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_83176_23)">
-                                <rect y="1" width="30" height="30" fill="#212429"/>
-                                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_83176_23">
-                                <rect width="110" height="32" fill="white"/>
-                                </clipPath>
-                                </defs>
+                            <div class="header__logo-links">
+                                <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_83176_23)">
+                                    <rect y="1" width="30" height="30" fill="currentColor"/>
+                                    <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+                                    <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_83176_23">
+                                    <rect width="110" height="32" fill="white"/>
+                                    </clipPath>
+                                    </defs>
                                 </svg>
+                                <nav class="header__links">
+                                    <a href="" class="header__link">Components</a>
+                                    <a href="" class="header__link">About</a>
+                                    <a href="" class="header__link">Contact</a>
+                                </nav>
+                            </div>
                             <label class="toggler" id="theme-changer">
                                 <input type="checkbox" class="toggler__input">
                                 <div class="toggler__state">
+                                    <svg class="toggler__icon toggler__icon_light-theme">
+                                        <use href="/assets/images/icons-sprite.svg#sun"></use>
+                                    </svg>
                                     <div class="toggler__control">
                                         <div class="toggler__indicator"></div>
                                     </div>
-                                    <div class="toggler__description">
-                                        Toggler
-                                    </div>
+                                    <svg class="toggler__icon toggler__icon_black-theme">
+                                        <use href="/assets/images/icons-sprite.svg#moon"></use>
+                                    </svg>
                                 </div>
                             </label>
                         </div>                        
@@ -61,20 +71,706 @@
                     <main class="content page__main">
                         <div class="container">
                             <div class="content__inner">
+                                <a class="card" href="/pages/page-tooltip.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="tooltip">
+                                            <svg class="tooltip__trigger">
+                                                <use href="/assets/images/icons-sprite.svg#help"></use>
+                                            </svg>
+                                            <div class="tooltip__bubble" style="display: block;">
+                                                <p class="tooltip__text">Helper Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Tooltip</p>
+                                </a>
+                                <a class="card" href="/pages/page-custom-form-elem.html">
+                                    <div class="card__content-wrapper card__content-wrapper_form-card">
+                                        <div class="card__inner-wrapper">
+                                            <label class="checkbox checkbox_preview">
+                                                <input type="checkbox" class="checkbox__input">
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__description">
+                                                        Default
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox checkbox_preview">
+                                                <input type="checkbox" class="checkbox__input" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__description">
+                                                        Checked
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox checkbox_preview">
+                                                <input type="checkbox" class="checkbox__input" disabled>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__description">
+                                                        Disabled
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="card__inner-wrapper">
+                                            <label class="radiobutton radiobutton_preview">
+                                                <input type="radio" class="radiobutton__input" name="study-radio">
+                                                <div class="radiobutton__state">
+                                                    <div class="radiobutton__control">
+                                                        <div class="radiobutton__indicator-on"></div>
+                                                    </div>
+                                                    <div class="radiobutton__description">
+                                                        Default
+                                                    </div>
+                                                </div>
+                                            </label>
+                                    
+                                            <label class="radiobutton radiobutton_preview">
+                                                <input type="radio" class="radiobutton__input" name="study-radio" checked>
+                                                <div class="radiobutton__state">
+                                                    <div class="radiobutton__control">
+                                                        <div class="radiobutton__indicator-on"></div>
+                                                    </div>
+                                                    <div class="radiobutton__description">
+                                                        Selected
+                                                    </div>
+                                                </div>
+                                            </label>
+                                    
+                                            <label class="radiobutton radiobutton_preview">
+                                                <input disabled type="radio" class="radiobutton__input" name="study-radio">
+                                                <div class="radiobutton__state">
+                                                    <div class="radiobutton__control">
+                                                        <div class="radiobutton__indicator-on"></div>
+                                                    </div>
+                                                    <div class="radiobutton__description">
+                                                        Disabled
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Custom form elements</p>
+                                </a>
+                                <a class="card" href="/pages/template.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="calendar calendar_preview">
+                                            <p class="calendar__title calendar__title_preview">October 2023</p>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Mon</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Tue</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Wed</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Thu</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Fri</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Sat</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Sun</span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview">1</span>
+                                                    <span class="calendar__item calendar__item_preview">2</span>
+                                                    <span class="calendar__item calendar__item_preview">3</span>
+                                                    <span class="calendar__item calendar__item_preview">4</span>
+                                                    <span class="calendar__item calendar__item_preview">5</span>
+                                                    <span class="calendar__item calendar__item_preview">6</span>
+                                                    <span class="calendar__item calendar__item_preview">7</span>
+                                                    <span class="calendar__item calendar__item_preview">8</span>
+                                                    <span class="calendar__item calendar__item_preview">9</span>
+                                                    <span class="calendar__item calendar__item_preview">10</span>
+                                                    <span class="calendar__item calendar__item_preview">11</span>
+                                                    <span class="calendar__item calendar__item_preview">12</span>
+                                                    <span class="calendar__item calendar__item_preview">13</span>
+                                                    <span class="calendar__item calendar__item_preview">14</span>
+                                                    <span class="calendar__item calendar__item_preview">15</span>
+                                                    <span class="calendar__item calendar__item_preview">16</span>
+                                                    <span class="calendar__item calendar__item_preview">17</span>
+                                                    <span class="calendar__item calendar__item_active-day calendar__item_preview">18</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">19</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">20</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">21</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">22</span>
+                                                    <span class="calendar__item calendar__item_active-day calendar__item_preview">23</span>
+                                                    <span class="calendar__item calendar__item_preview">24</span>
+                                                    <span class="calendar__item calendar__item_preview">25</span>
+                                                    <span class="calendar__item calendar__item_preview">26</span>
+                                                    <span class="calendar__item calendar__item_preview">27</span>
+                                                    <span class="calendar__item calendar__item_preview">28</span>
+                                                    <span class="calendar__item calendar__item_preview">29</span>
+                                                    <span class="calendar__item calendar__item_preview">30</span>
+                                                    <span class="calendar__item calendar__item_preview">31</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Calendar</p>
+                                </a>
+                                <a class="card" href="/pages/page-modal.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="modal modal_preview">
+                                            <div class="modal__window modal__window_preview">
+                                                <svg class="modal__close" id="modal-close">
+                                                    <use href="/assets/images/icons-sprite.svg#close"></use>
+                                                </svg>  
+                                                <div class="formgroup">
+                                                    <label class="formgroup__label formgroup__label_preview">Name</label>
+                                                    <div class="formgroup__wrapper">
+                                                        <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="">
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                        </svg>
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div> 
+                                                <div class="formgroup">
+                                                    <label class="formgroup__label formgroup__label_preview">E-mail</label>
+                                                    <div class="formgroup__wrapper">
+                                                        <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="">
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                        </svg>
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>  
+                                                <button class="button button_primary button_preview-modal">Submit</button>        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Modal dialog</p>
+                                </a>
+                                <a class="card" href="/pages/template.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="histogram histogram_preview">
+                                            <div class="histogram__header">
+                                                <div class="histogram__header-title">
+                                                    <p class="histogram__title">Total order</p>
+                                                    <p class="histogram__link">View</p>
+                                                </div>
+                                                <h4 class="histogram__value">50254</h4>
+                                            </div>
+                                            <div class="histogram__body">
+                                                <div class="histogram__bar histogram__bar_XL"></div>
+                                                <div class="histogram__bar histogram__bar_L"></div>
+                                                <div class="histogram__bar histogram__bar_XL"></div>
+                                                <div class="histogram__bar histogram__bar_S"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                                <div class="histogram__bar histogram__bar_S"></div>
+                                                <div class="histogram__bar histogram__bar_XS"></div>
+                                                <div class="histogram__bar histogram__bar_S"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                                <div class="histogram__bar histogram__bar_L"></div>
+                                                <div class="histogram__bar histogram__bar_XL"></div>
+                                                <div class="histogram__bar histogram__bar_M"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Histogram</p>
+                                </a>
+                                <a class="card" href="/pages/template.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="avatar avatar_preview">
+                                            <img class="avatar__image" src="/assets/images/avatar.png" alt="avatar image">
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Avatar</p>
+                                </a>
+                                <a class="card" href="/pages/template.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="card__inner-wrapper">
+                                            <button class="button button_primary button_preview">Primary</button>
+                                            <button class="button button_secondary button_preview">Secondary</button>
+                                            <button class="button button_disabled button_preview">Disabled</button>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Button</p>
+                                </a>
+                                <a class="card" href="/pages/template.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="accordion">
+                                            <details open class="accordion__item accordion__item_preview">
+                                                <summary class="accordion__summary">
+                                                    Accordion item 1
+                                                    <svg class="accordion__icon">
+                                                        <use href="/assets/images/icons-sprite.svg#arrow-down"></use>
+                                                    </svg>
+                                                </summary>
+                                                <p class="accordion__descriptor">
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                                </p>
+                                            </details>
+                                            <details class="accordion__item accordion__item_preview">
+                                                <summary class="accordion__summary">
+                                                    Accordion item 2
+                                                    <svg class="accordion__icon">
+                                                        <use href="/assets/images/icons-sprite.svg#arrow-down"></use>
+                                                    </svg>
+                                                </summary>
+                                                <p class="accordion__descriptor">
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                                </p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Accordion</p>
+                                </a>
+                                <a class="card" href="/pages/template.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="skeleton skeleton_preview">
+                                            <div class="skeleton__header">
+                                                <div class="skeleton__avatar"></div>
+                                                <div class="skeleton__title">
+                                                    <div class="skeleton__line skeleton__line_M"></div>
+                                                    <div class="skeleton__line skeleton__line_L"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skeleton__body">
+                                                <div class="skeleton__line"></div>
+                                                <div class="skeleton__line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Skeleton</p>
+                                </a>
+                                <a class="card" href="/pages/page-input.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="formgroup">
+                                            <label class="formgroup__label formgroup__label_preview">Label</label>
+                                            <div class="formgroup__wrapper">
+                                                <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="">
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="formgroup formgroup_success">
+                                            <label class="formgroup__label formgroup__label_preview">Label</label>
+                                            <div class="formgroup__wrapper">
+                                                <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="Success">
+                                                <svg class="formgroup__icon formgroup__icon_preview formgroup__icon_success">
+                                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="formgroup formgroup_error">
+                                            <label class="formgroup__label formgroup__label_preview">Label</label>
+                                            <div class="formgroup__wrapper">
+                                                <input type="text" class="formgroup__input formgroup__input_error formgroup__input_preview" placeholder="Placeholder" value="Error">
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="formgroup__icon formgroup__icon_preview formgroup__icon_error">
+                                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Input</p>
+                                </a>
+                                <a class="card" href="/pages/template.html">
+                                    <div class="card__content-wrapper">
+                                        <div class="card__inner-wrapper">
+                                            <label class="toggler toggler_preview">
+                                                <input type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__indicator"></div>
+                                                    </div>
+                                                    <div class="toggler__description">
+                                                        Toggler
+                                                    </div>
+                                                </div>
+                                            </label>
+
+                                            <label class="toggler toggler_preview">
+                                                <input checked type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__indicator"></div>
+                                                    </div>
+                                                    <div class="toggler__description">
+                                                        Toggler checked
+                                                    </div>
+                                                </div>
+                                            </label>
+                                    
+                                            <label class="toggler toggler_preview">
+                                                <input disabled type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__indicator"></div>
+                                                    </div>
+                                                    <div class="toggler__description">
+                                                        Toggler disabled
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Toggler</p>
+                                </a>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="tabs__content tabs__content_elements">
+                    <main class="content page__main">
+                        <div class="container">
+                            <div class="content__inner">
                                 <div class="card">
-                                    <div></div>
+                                    <div class="card__content-wrapper">
+                                        <div class="formgroup">
+                                            <label class="formgroup__label formgroup__label_preview">Label</label>
+                                            <div class="formgroup__wrapper">
+                                                <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="">
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="formgroup formgroup_success">
+                                            <label class="formgroup__label formgroup__label_preview">Label</label>
+                                            <div class="formgroup__wrapper">
+                                                <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="Success">
+                                                <svg class="formgroup__icon formgroup__icon_preview formgroup__icon_success">
+                                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="formgroup formgroup_error">
+                                            <label class="formgroup__label formgroup__label_preview">Label</label>
+                                            <div class="formgroup__wrapper">
+                                                <input type="text" class="formgroup__input formgroup__input_error formgroup__input_preview" placeholder="Placeholder" value="Error">
+                                                <svg class="formgroup__icon formgroup__icon_preview">
+                                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="formgroup__icon formgroup__icon_preview formgroup__icon_error">
+                                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Input</p>
+                                </div>
+                                <div class="card">
+                                    <div class="card__content-wrapper">
+                                        <div class="tooltip">
+                                            <svg class="tooltip__trigger">
+                                                <use href="/assets/images/icons-sprite.svg#help"></use>
+                                            </svg>
+                                            <div class="tooltip__bubble" style="display: block;">
+                                                <p class="tooltip__text">Helper Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p class="card__title">Tooltip</p>
                                 </div>
                                 <div class="card">
-                                    <div></div>
+                                    <div class="card__content-wrapper card__content-wrapper_form-card">
+                                        <div class="card__inner-wrapper">
+                                            <label class="checkbox checkbox_preview">
+                                                <input type="checkbox" class="checkbox__input">
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__description">
+                                                        Default
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox checkbox_preview">
+                                                <input type="checkbox" class="checkbox__input" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__description">
+                                                        Checked
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox checkbox_preview">
+                                                <input type="checkbox" class="checkbox__input" disabled>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__description">
+                                                        Disabled
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="card__inner-wrapper">
+                                            <label class="radiobutton radiobutton_preview">
+                                                <input type="radio" class="radiobutton__input" name="study-radio">
+                                                <div class="radiobutton__state">
+                                                    <div class="radiobutton__control">
+                                                        <div class="radiobutton__indicator-on"></div>
+                                                    </div>
+                                                    <div class="radiobutton__description">
+                                                        Default
+                                                    </div>
+                                                </div>
+                                            </label>
+                                    
+                                            <label class="radiobutton radiobutton_preview">
+                                                <input type="radio" class="radiobutton__input" name="study-radio" checked>
+                                                <div class="radiobutton__state">
+                                                    <div class="radiobutton__control">
+                                                        <div class="radiobutton__indicator-on"></div>
+                                                    </div>
+                                                    <div class="radiobutton__description">
+                                                        Selected
+                                                    </div>
+                                                </div>
+                                            </label>
+                                    
+                                            <label class="radiobutton radiobutton_preview">
+                                                <input disabled type="radio" class="radiobutton__input" name="study-radio">
+                                                <div class="radiobutton__state">
+                                                    <div class="radiobutton__control">
+                                                        <div class="radiobutton__indicator-on"></div>
+                                                    </div>
+                                                    <div class="radiobutton__description">
+                                                        Disabled
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
                                     <p class="card__title">Custom form elements</p>
                                 </div>
                                 <div class="card">
-                                    <div></div>
+                                    <div class="card__content-wrapper">
+                                        <div class="avatar avatar_preview">
+                                            <img class="avatar__image" src="/assets/images/avatar.png" alt="avatar image">
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Avatar</p>
+                                </div>
+                                <div class="card">
+                                    <div class="card__content-wrapper">
+                                        <div class="card__inner-wrapper">
+                                            <button class="button button_primary button_preview">Primary</button>
+                                            <button class="button button_secondary button_preview">Secondary</button>
+                                            <button class="button button_disabled button_preview">Disabled</button>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Button</p>
+                                </div>
+                                <div class="card">
+                                    <div class="card__content-wrapper">
+                                        <div class="card__inner-wrapper">
+                                            <label class="toggler toggler_preview">
+                                                <input type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__indicator"></div>
+                                                    </div>
+                                                    <div class="toggler__description">
+                                                        Toggler
+                                                    </div>
+                                                </div>
+                                            </label>
+
+                                            <label class="toggler toggler_preview">
+                                                <input checked type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__indicator"></div>
+                                                    </div>
+                                                    <div class="toggler__description">
+                                                        Toggler checked
+                                                    </div>
+                                                </div>
+                                            </label>
+                                    
+                                            <label class="toggler toggler_preview">
+                                                <input disabled type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__indicator"></div>
+                                                    </div>
+                                                    <div class="toggler__description">
+                                                        Toggler disabled
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Toggler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="tabs__content tabs__content_containers">
+                    <main class="content page__main">
+                        <div class="container">
+                            <div class="content__inner">
+                                <div class="card">
+                                    <div class="card__content-wrapper">
+                                        <div class="calendar calendar_preview">
+                                            <p class="calendar__title calendar__title_preview">October 2023</p>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Mon</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Tue</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Wed</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Thu</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Fri</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Sat</span>
+                                                    <span class="calendar__item calendar__item_day calendar__item_day_preview">Sun</span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview"></span>
+                                                    <span class="calendar__item calendar__item_preview">1</span>
+                                                    <span class="calendar__item calendar__item_preview">2</span>
+                                                    <span class="calendar__item calendar__item_preview">3</span>
+                                                    <span class="calendar__item calendar__item_preview">4</span>
+                                                    <span class="calendar__item calendar__item_preview">5</span>
+                                                    <span class="calendar__item calendar__item_preview">6</span>
+                                                    <span class="calendar__item calendar__item_preview">7</span>
+                                                    <span class="calendar__item calendar__item_preview">8</span>
+                                                    <span class="calendar__item calendar__item_preview">9</span>
+                                                    <span class="calendar__item calendar__item_preview">10</span>
+                                                    <span class="calendar__item calendar__item_preview">11</span>
+                                                    <span class="calendar__item calendar__item_preview">12</span>
+                                                    <span class="calendar__item calendar__item_preview">13</span>
+                                                    <span class="calendar__item calendar__item_preview">14</span>
+                                                    <span class="calendar__item calendar__item_preview">15</span>
+                                                    <span class="calendar__item calendar__item_preview">16</span>
+                                                    <span class="calendar__item calendar__item_preview">17</span>
+                                                    <span class="calendar__item calendar__item_active-day calendar__item_preview">18</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">19</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">20</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">21</span>
+                                                    <span class="calendar__item calendar__item_active-period calendar__item_preview">22</span>
+                                                    <span class="calendar__item calendar__item_active-day calendar__item_preview">23</span>
+                                                    <span class="calendar__item calendar__item_preview">24</span>
+                                                    <span class="calendar__item calendar__item_preview">25</span>
+                                                    <span class="calendar__item calendar__item_preview">26</span>
+                                                    <span class="calendar__item calendar__item_preview">27</span>
+                                                    <span class="calendar__item calendar__item_preview">28</span>
+                                                    <span class="calendar__item calendar__item_preview">29</span>
+                                                    <span class="calendar__item calendar__item_preview">30</span>
+                                                    <span class="calendar__item calendar__item_preview">31</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p class="card__title">Calendar</p>
                                 </div>
                                 <div class="card">
-                                    <div></div>
+                                    <div class="card__content-wrapper">
+                                        <div class="skeleton skeleton_preview">
+                                            <div class="skeleton__header">
+                                                <div class="skeleton__avatar"></div>
+                                                <div class="skeleton__title">
+                                                    <div class="skeleton__line skeleton__line_M"></div>
+                                                    <div class="skeleton__line skeleton__line_L"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skeleton__body">
+                                                <div class="skeleton__line"></div>
+                                                <div class="skeleton__line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Skeleton</p>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="tabs__content tabs__content_templates">
+                    <main class="content page__main">
+                        <div class="container">
+                            <div class="content__inner">
+                                <div class="card">
+                                    <div class="card__content-wrapper">
+                                        <div class="modal modal_preview">
+                                            <div class="modal__window modal__window_preview">
+                                                <svg class="modal__close" id="modal-close">
+                                                    <use href="/assets/images/icons-sprite.svg#close"></use>
+                                                </svg>  
+                                                <div class="formgroup">
+                                                    <label class="formgroup__label formgroup__label_preview">Name</label>
+                                                    <div class="formgroup__wrapper">
+                                                        <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="">
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                        </svg>
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div> 
+                                                <div class="formgroup">
+                                                    <label class="formgroup__label formgroup__label_preview">E-mail</label>
+                                                    <div class="formgroup__wrapper">
+                                                        <input type="text" class="formgroup__input formgroup__input_preview" placeholder="Placeholder" value="">
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#success"></use>
+                                                        </svg>
+                                                        <svg class="formgroup__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#error"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>  
+                                                <button class="button button_primary button_preview-modal">Submit</button>        
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p class="card__title">Modal dialog</p>
                                 </div>
                                 <div class="card">
@@ -107,31 +803,35 @@
                                     <p class="card__title">Histogram</p>
                                 </div>
                                 <div class="card">
-                                    <div></div>
-                                    <p class="card__title">Avatar</p>
+                                    <div class="card__content-wrapper">
+                                        <div class="accordion">
+                                            <details open class="accordion__item accordion__item_preview">
+                                                <summary class="accordion__summary">
+                                                    Accordion item 1
+                                                    <svg class="accordion__icon">
+                                                        <use href="/assets/images/icons-sprite.svg#arrow-down"></use>
+                                                    </svg>
+                                                </summary>
+                                                <p class="accordion__descriptor">
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                                </p>
+                                            </details>
+                                            <details class="accordion__item accordion__item_preview">
+                                                <summary class="accordion__summary">
+                                                    Accordion item 2
+                                                    <svg class="accordion__icon">
+                                                        <use href="/assets/images/icons-sprite.svg#arrow-down"></use>
+                                                    </svg>
+                                                </summary>
+                                                <p class="accordion__descriptor">
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                                </p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <p class="card__title">Accordion</p>
                                 </div>
                             </div>
-                        </div>
-                    </main>
-                </div>
-                <div class="tabs__content tabs__content_elements">
-                    <main class="content page__main">
-                        <div class="container">
-                            Here will be sorted components
-                        </div>
-                    </main>
-                </div>
-                <div class="tabs__content tabs__content_containers">
-                    <main class="content page__main">
-                        <div class="container">
-                            Here will be sorted components
-                        </div>
-                    </main>
-                </div>
-                <div class="tabs__content tabs__content_templates">
-                    <main class="content page__main">
-                        <div class="container">
-                            Here will be sorted components
                         </div>
                     </main>
                 </div>

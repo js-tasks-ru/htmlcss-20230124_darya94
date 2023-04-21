@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/components/side-menu/side-menu.css">
+        <link rel="stylesheet" href="/components/component-description/component-description.css">
+        <script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
+    </head>
+    <body>
+        <div class="page page_inner"> 
+            <header class="header header_inner">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo-theme-changer">
+                            <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_83176_23)">
+                                <rect y="1" width="30" height="30" fill="currentColor"/>
+                                <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+                                <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_83176_23">
+                                <rect width="110" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>    
+                            <label class="toggler" id="theme-changer">
+                                <input type="checkbox" class="toggler__input">
+                                <div class="toggler__state">
+                                    <svg class="toggler__icon toggler__icon_light-theme">
+                                        <use href="/assets/images/icons-sprite.svg#sun"></use>
+                                    </svg>
+                                    <div class="toggler__control">
+                                        <div class="toggler__indicator"></div>
+                                    </div>
+                                    <svg class="toggler__icon toggler__icon_black-theme">
+                                        <use href="/assets/images/icons-sprite.svg#moon"></use>
+                                    </svg>
+                                </div>
+                            </label> 
+                        </div>                    
+                    </div>
+                </div>
+            </header>
+            <main class="content content_inner-page">
+                <div class="modal" id="modal">
+                    <div class="modal__window">
+                        <svg class="modal__close" id="modal-close">
+                            <use href="/assets/images/icons-sprite.svg#close"></use>
+                        </svg>  
+                        <div class="formgroup">
+                            <label class="formgroup__label">Name</label>
+                            <div class="formgroup__wrapper">
+                                <input type="text" class="formgroup__input" placeholder="" value="">
+                                <svg class="formgroup__icon">
+                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                </svg>
+                                <svg class="formgroup__icon">
+                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </div> 
+                        <div class="formgroup">
+                            <label class="formgroup__label">E-mail</label>
+                            <div class="formgroup__wrapper">
+                                <input type="text" class="formgroup__input" placeholder="" value="">
+                                <svg class="formgroup__icon">
+                                    <use href="/assets/images/icons-sprite.svg#success"></use>
+                                </svg>
+                                <svg class="formgroup__icon">
+                                    <use href="/assets/images/icons-sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </div>  
+                        <button class="button button_primary">Submit</button>        
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content__wrapper-inner-page">
+                        <div class="side-menu side-menu_page">
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Elements</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/pages/page-input.html">Input</a>
+                                    <a class="side-menu__link" href="/pages/page-tooltip.html">Tooltip</a>
+                                    <a class="side-menu__link" href="/pages/page-custom-form-elem.html">Custom form elements</a>
+                                    <a class="side-menu__link" href="/pages/page-avatar.html">Avatar</a>
+                                    <a class="side-menu__link" href="/pages/page-button.html">Button</a>
+                                    <a class="side-menu__link" href="/pages/page-toggler.html">Toggler</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Containers</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/pages/page-calendar.html">Calendar</a>
+                                    <a class="side-menu__link" href="/pages/page-skeleton.html">Skeleton</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <h4 class="side-menu__title">Templates</h4>
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link side-menu__link_active" href="/pages/page-modal.html">Modal</a>
+                                    <a class="side-menu__link" href="/pages/page-histogram.html">Histogram</a>
+                                    <a class="side-menu__link" href="/pages/page-accordion.html">Accordion</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__block">
+                                <div class="side-menu__link-list">
+                                    <a class="side-menu__link" href="/index.html">Main page</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-description">
+                            <h3 class="component-description__title">Modal</h3>
+                            <div class="component-description__component-view">
+                                <button class="button button_primary" id="modal-open">Open modal</button>
+                            </div>
+                            <div class="component-description__code">
+                                <div class="tabs">
+                                    <input class="tabs__input" type="radio" id="html" name="tab" checked>
+                                    <input class="tabs__input" type="radio" id="css" name="tab">
+
+                                    <div class="tabs__scroller">
+                                        <div class="container">
+                                            <div class="tabs__scroller-wrapper">
+                                                <label class="tabs__label" for="html">HTML</label>
+                                                <label class="tabs__label" for="css">CSS</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="tabs__content tabs__content_html">                  
+                                        <div class="tabs__content-code">
+                                            <code>
+                                                &ltdiv class="modal" id="modal"&gt<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="modal__window"&gt<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltsvg class="modal__close" id="modal-close"&gt<br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltuse href="/assets/images/icons-sprite.svg#close"&gt&lt/use&gt<br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/svg&gt<br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="formgroup"&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="formgroup__label"&gtName&lt/label&gt<br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="formgroup__wrapper"&gt<br>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltinput type="text" class="formgroup__input" placeholder="" value=""&gt<br>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltsvg class="formgroup__icon"&gt<br>
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltuse href="/assets/images/icons-sprite.svg#success"&gt&lt/use&gt<br>
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/svg&gt<br>
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltsvg class="formgroup__icon"&gt<br>
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltuse href="/assets/images/icons-sprite.svg#error"&gt&lt/use&gt<br>
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/svg&gt<br>
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="formgroup"&gt<br>
+                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltlabel class="formgroup__label"&gtE-mail&lt/label&gt<br>
+                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltdiv class="formgroup__wrapper"&gt<br>
+                                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltinput type="text" class="formgroup__input" placeholder="" value=""&gt<br>
+                                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltsvg class="formgroup__icon"&gt<br>
+                                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltuse href="/assets/images/icons-sprite.svg#success"&gt&lt/use&gt<br>
+                                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/svg&gt<br>
+                                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltsvg class="formgroup__icon"&gt<br>
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltuse href="/assets/images/icons-sprite.svg#error"&gt&lt/use&gt<br>
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/svg&gt<br>
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div>&gt<br>
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt <br>
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbutton class="button button_primary"&gtSubmit&lt/button&gt<br>       
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt<br>
+                                                                                            &lt/div&gt
+                                            </code>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content tabs__content_css">
+                                        <div class="tabs__content-code">
+                                            <code>
+                                                .modal {<br>
+                                                    position: relative;<br>
+                                                    display: none;<br>
+                                                    position: fixed;<br>
+                                                    top:0;<br>
+                                                    height: 100%;<br>
+                                                    width: 100%;<br>
+                                                    z-index: 1;<br>
+                                                    background: rgba(196, 196, 196, 0.5);<br>
+                                                }<br>
+                                                <br>
+                                                .modal__window {<br>
+                                                    position: absolute;<br>
+                                                    top: 50%;<br>
+                                                    left: 50%;<br>
+                                                    transform: translate(-50%, -50%);<br>
+                                                    background: var(--main-bg);<br>
+                                                    border-radius: 8px;<br>
+                                                    padding: 30px 40px 30px 40px;<br>
+                                                    max-width: 428px;<br>
+                                                    font-family: 'Inter';<br>
+                                                    font-style: normal;<br>
+                                                    z-index: 1;<br>
+                                                    display: flex;<br>
+                                                    flex-direction: column;<br>
+                                                    gap: 16px;<br>
+                                                }<br>
+                                                <br>
+                                                .modal__close {<br>
+                                                    position: absolute;<br>
+                                                    top: 12px;<br>
+                                                    right: 12px;<br>
+                                                    cursor: pointer;<br>
+                                                    width: 24px;<br>
+                                                    height: 24px;<br>
+                                                }<br>
+                                                <br>
+                                                .modal__title {<br>
+                                                    font-weight: 600;<br>
+                                                    font-size: 20px;<br>
+                                                    line-height: 24px;<br>
+                                                    color: #334D6E;<br>
+                                                    margin: 0 0 14px 0;<br>
+                                                }<br>
+                                                <br>
+                                                .modal__text {<br>
+                                                    margin: 0;<br>
+                                                    font-weight: 400;<br>
+                                                    font-size: 16px;<br>
+                                                    line-height: 24px;<br>
+                                                    color: var(--font-color);<br>
+                                                }
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                       
+                </div>
+            </main>
+            <footer class="footer footer_inner">
+                <div class="container">
+                   <h5 class="footer__inner-description">Reusable component library</h5>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="/05-lection3/02-modal/index.js"></script> 
+</html>

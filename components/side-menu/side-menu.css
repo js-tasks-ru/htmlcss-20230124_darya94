@@ -9,7 +9,7 @@
     font-weight: 400;
     line-height: 26px;
     margin: 0px;
-    color: var(--black);
+    color: var(--font-color);
 }
 
 .side-menu__link-list {
@@ -23,12 +23,8 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 22px; 
-    color: var(--black);
+    color: var(--font-color);
     text-decoration: none;   
-}
-
-.side-menu__link:last-child {
-    margin-top: 26px;
 }
 
 .side-menu__link_active {
@@ -39,4 +35,10 @@
     .side-menu {
         display: none;
     }
+}
+
+.side-menu_page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
